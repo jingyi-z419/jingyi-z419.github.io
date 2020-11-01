@@ -2,14 +2,30 @@
 title: "Jingyi Zhang's website"
 output: 
   html_document:
-    code_folding: hide
     toc: true
     toc_float: true
 ---
 
-## links to related websites
 
 
 
 
-[About me](about.html)
+
+
+
+
+
+
+
+
+
+
+If you want to know more about my academic and professional experience, please click here:
+[about me](about.html)
+
+
+
+
+
+
+
