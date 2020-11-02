@@ -21,7 +21,7 @@ output:
 ## Education Background
 
 * 2015-2019 B.S. in Neuroscience, Psychology minor, Indiana University Bloomington
-* 2020-2022 M.S. in Biostatistics, Columbia University
+* 2020-2022(expected) M.S. in Biostatistics, Columbia University
 
 <br/>
 
@@ -55,7 +55,7 @@ coming soon ...
 ## Skills
 
 * Fluent in English and Chinese (native)
-* Coding in R (I am still learning)
+* Experience with R Statistical packages
 
 <br/>
 
