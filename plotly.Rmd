@@ -1,0 +1,65 @@
+---
+title: "NYC resturants"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+---
+
+
+```{r, include = F}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(lubridate)
+```
+
+```{r, include = F}
+data("rest_inspec")
+
+rest_inspec = 
+  rest_inspec %>%
+  filter(
+    cuisine_description == "Chinese",
+    grade == c("A", "B", "C")
+  ) %>%
+  mutate(inspection_date = as_date(inspection_date))
+
+rest_inspec
+```
+
+# Plotly plots
+
+## scatterplot
+
+```{r, warning = F}
+rest_inspec %>%
+  mutate(text_label = str_c("Grade: ", grade, "\nResturants: ", dba)) %>%
+  plot_ly(
+    x = ~inspection_date, y = ~score, color = ~boro, text = ~text_label,
+    alpha = .5, type = "scatter", mode = "markers")
+```
+
+## boxplot
+
+```{r}
+rest_inspec %>%
+  mutate(boro = fct_reorder(boro, score)) %>%
+  plot_ly(
+    y = ~score, x = ~boro, color = ~boro, 
+    type = "box", colors = "viridis")
+```
+
+## bar plot
+
+```{r} 
+rest_inspec %>%
+  count(boro) %>%
+  mutate(boro = fct_reorder(boro, n)) %>%
+  plot_ly(
+    x = ~boro, y = ~n, color = ~boro, 
+    type = "bar", colors = "viridis")
+```
+
+
