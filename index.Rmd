@@ -5,23 +5,51 @@ output:
     toc: true
     toc_float: true
 ---
+<br/>
 
+Hello, welcome to my personal website!
 
+<img src="images/alice.gif" style="width:60%">
 
-
-
-
-
-
-
-
-
-
-
-
-
-If you want to know more about my academic and professional experience, please click here:
+If you want to know more about my academic and professional experiences, please click here:
 [about me](about.html)
+
+<br/>
+
+## Something about me
+
+I am currently a master student majoring in Biostatistics at Columbia University. 
+
+<br/>
+
+## My hometown
+
+<img src="images/beijing.gif" style="width:65%">
+
+<br/>
+
+## My favorite food
+hotpot!!!
+
+<img src="images/hotpot.gif" style="width:65%">
+
+<br/>
+
+## My favorite movie
+Blade Runner: 2049
+
+<img src="images/2049.gif" style="width:65%">
+
+
+
+
+
+
+
+
+
+
+
 
 
 
